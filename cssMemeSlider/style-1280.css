@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background-color: rgb(18, 61, 77);
+    background-color: rgb(121, 71, 126);
     width: 100vw;
     height: 75vw;
 }
@@ -17,7 +17,7 @@ body {
     justify-content: flex-start;
     max-width: 100%;
     width: 100%;
-    height: 60vw;
+    height: 65vw;
 
 
 
@@ -69,41 +69,43 @@ body {
     transition: all 0.5s;
 }
 
-.caption-and-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 12%;
-    width: 100%;
-}
+@media screen and (min-width: 678px) {
+    .caption-and-nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 15%;
+        width: 100%;
+    }
 
-.caption-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 65%;
-    overflow: hidden;
-}
+    .caption-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        overflow: hidden;
+    }
 
-.caption {
-    text-align: left;
-    font-size: 2.7vw;
-    transition: all 0.5s;
-    color: rgb(254, 201, 248);
-    font-style: oblique;
-    min-width: 100%;
-    margin: 0%;
+    .caption {
+        text-align: left;
+        font-size: 2.7vw;
+        transition: all 0.5s;
+        color: rgb(17, 199, 245);
+        font-style: oblique;
+        min-width: 100%;
+        margin: 0%;
 
-}
+    }
 
-.nav-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 35%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
+    .nav-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 54%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
 }
 
 ul li {
@@ -129,8 +131,8 @@ ul li a {
     width: 66.66%;
     height: 66.66%;
     margin: 16.66%;
-    background-color: rgb(249, 119, 208);
-    border: 0.25rem solid rgb(249, 119, 208);
+    background-color: rgb(11, 121, 148);
+    border: 0.3vw solid rgb(11, 121, 148);
     border-radius: 50%;
 }
 
@@ -141,7 +143,7 @@ ul li a {
     height: 66.66%;
     margin: 16.66%;
     background-color: rgb(255, 255, 255);
-    border: 0.25rem solid rgb(255, 255, 255);
+    border: 0.3vw solid rgb(255, 255, 255);
     border-radius: 50%;
     transition: all 0.5s;
 }
@@ -195,8 +197,8 @@ ul li a {
     width: 66.66%;
     height: 66.66%;
     margin: 16.66%;
-    background-color: rgb(18, 61, 77);
-    border: 0.25rem solid rgb(249, 119, 208);
+    background-color: rgb(121, 71, 126);
+    border: 0.3vw solid rgb(11, 121, 148);
     border-radius: 50%;
     transition: all 0.5s;
 }
@@ -210,8 +212,52 @@ ul li a {
     width: 66.66%;
     height: 66.66%;
     margin: 16.66%;
-    background-color: rgb(18, 61, 77);
-    border: 0.25rem solid rgb(255, 255, 255);
+    background-color: rgb(121, 71, 126);
+    border: 0.3vw solid rgb(255, 255, 255);
     border-radius: 50%;
     transition: all 0.5s;
+}
+
+@media screen and (max-width: 678px) {
+    .caption-and-nav-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 16vw;
+        width: 96vw;
+    }
+
+    .caption-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 46%;
+        overflow: hidden;
+    }
+
+    .caption-container div {
+        width: 96vw;
+    }
+
+    .caption {
+        text-align: left;
+        font-size: 2.7vw;
+        transition: all 0.5s;
+        color: rgb(17, 199, 245);
+        font-style: oblique;
+        min-width: 100%;
+        margin: 0%;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39%;
+        height: 46%;
+        margin: 0%;
+        padding: 0%;
+    }
+
 }
